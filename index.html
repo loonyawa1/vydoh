@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Выдох</title>
+<meta name="description" content="Хроника: как менялось общество от повседневного курения 1940-х до закона 2013–2014 годов и сегодняшнего дня. Учебный лонгрид. Курение вредит вашему здоровью.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Выдох. Хроника одной привычки">
+<meta property="og:description" content="Как менялось общество от папиросы в каждой руке до закона 2013–2014 годов. Учебный лонгрид. Курение вредит вашему здоровью.">
+<meta property="og:image" content="https://loonyawa1.github.io/vydoh/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Cpath d='M16 27C6 19 4 14 7 9.500c2.500-3.500 7-3 9 .5 2-3.500 6.500-4 9-.5 3 4.500 1 9.500-9 17.500z' fill='none' stroke='%23ff2a45' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/yeseva-one-cyrillic-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/golos-text-cyrillic-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<canvas id="sketch" aria-hidden="true"></canvas>
+<div id="organ-labels" aria-hidden="true"></div>
+<div id="grain" aria-hidden="true"></div>
+
+<div id="hud" aria-hidden="true">
+  <div id="year">1920</div>
+  <div id="progress"><i></i></div>
+</div>
+<div id="strip">Курение вредит вашему здоровью <span>· Исторический материал, не реклама · 18+</span></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="man" viewBox="0 0 20 40">
+    <circle cx="10" cy="6" r="4.600"/>
+    <path d="M4 13.500c1.700-1.400 10.300-1.400 12 0 1 1 1.400 3 1.400 5.500v8h-2.600l-.5 12h-3.600l-.4-10h-.6l-.4 10H5.700l-.5-12H2.600v-8c0-2.500.4-4.500 1.400-5.500z"/>
+  </symbol>
+</svg>
+
+<main>
+
+<!-- ========== НАЧАЛО ========== -->
+<header class="hero" data-scene="hero" data-at="0" data-year="1920">
+  <div class="hero-in">
+    <p class="kicker">Хроника одной привычки · 1920–2026</p>
+    <h1>Выдох</h1>
+    <p class="lead">Как страна жила с папиросой в руке, почему это считалось нормой и как закон 2013–2014 годов изменил то, что казалось неизменным.</p>
+    <div class="warn warn--hero">
+      <strong>Курение вредит вашему здоровью.</strong>
+      Это исторический материал для учёбы. Он рассказывает, как было, и ничего не рекламирует. 18+
+    </div>
+    <p class="scroll-hint">Листайте вниз: рисунок на фоне меняется вместе с историей</p>
+  </div>
+</header>
+
+<section class="thesis col" data-year="1920">
+  <p class="shout rv">С середины 1970-х до середины 2000-х курили <em>около 60%</em> мужчин страны.</p>
+  <p class="shout rv">В 2024 году, по данным Росстата, таких <em>32,3%</em>.</p>
+  <p class="src rv"><a href="https://doi.org/10.1186/s12889-020-08464-4" target="_blank" rel="noopener">Shkolnikov и др., BMC Public Health, 2020</a> · <a href="https://t-j.ru/nosmoking-stat/" target="_blank" rel="noopener">Росстат, 2024, по Т—Ж</a></p>
+  <p class="big-p rv">Между этими цифрами лежат фронтовой паёк, талоны на сигареты, ларьки и один федеральный закон. Начнём с плакатов.</p>
+</section>
+
+<!-- ========== 1920-е ========== -->
+<section id="roots" class="chapter" data-scene="roots" data-year="1925">
+  <span class="ghost" data-speed="-0.18">1925</span>
+  <div class="col">
+    <p class="era rv">Пролог · 1920-е</p>
+    <h2 class="rv">Государство против.<br>И государство за</h2>
+    <p class="rv">Историк Триша Старкс пишет, что в 1920 году Советская Россия первой в мире задумала общенациональную программу по сокращению производства, продажи и употребления табака.</p>
+    <p class="rv">В те же годы государственные тресты заказывали яркие плакаты папирос. К 1922 году папиросы составляли 80% переработанного табака в стране. Старкс называет СССР первым массовым курящим обществом, которое государство одновременно поддерживало и пыталось остановить.</p>
+    <p class="src rv"><a href="https://www.themoscowtimes.com/2023/06/11/tricia-starks-takes-on-cigarettes-and-soviets-smoking-in-the-ussr-a81472" target="_blank" rel="noopener">Отрывок из книги Starks в The Moscow Times</a> · <a href="https://muse.jhu.edu/book/99516" target="_blank" rel="noopener">Cigarettes and Soviets, 2022</a></p>
+  </div>
+
+  <div class="posters">
+    <figure class="poster" data-speed="0.06">
+      <img src="assets/img/poster-trezvon.jpg" width="816" height="1200" loading="lazy" alt="Плакат 1925 года: двое мужчин в рубахах и надпись «Трезвон»">
+      <span class="stamp">Архивный документ, 1925<br>Не реклама</span>
+      <figcaption>А. Зеленский, 1925. <a href="https://commons.wikimedia.org/wiki/File:%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%9F%D0%B0%D0%BF%D0%B8%D1%80%D0%BE%D1%81%D1%8B_%D0%A2%D1%80%D0%B5%D0%B7%D0%B2%D0%BE%D0%BD._%D0%9D%D0%B5%D1%82_%D0%BB%D1%83%D1%87%D1%88%D0%B5.jpg" target="_blank" rel="noopener">Общественное достояние</a></figcaption>
+    </figure>
+    <figure class="poster poster--up" data-speed="0.16">
+      <img src="assets/img/poster-boks.jpg" width="835" height="1200" loading="lazy" alt="Плакат 1928 года: человечек из папиросных пачек шагает по разбросанным папиросам, надпись «Бокс»">
+      <span class="stamp">Архивный документ, 1928<br>Не реклама</span>
+      <figcaption>А. Зеленский для Моссельпрома, 1928. <a href="https://commons.wikimedia.org/wiki/File:%D0%92%D1%81%D0%B5_%D0%BA%D1%83%D1%80%D1%8F%D1%82_%D0%BF%D0%B0%D0%BF%D0%B8%D1%80%D0%BE%D1%81%D1%8B_%D0%91%D0%BE%D0%BA%D1%81._%D0%9C%D0%BE%D1%81%D1%81%D0%B5%D0%BB%D1%8C%D0%BF%D1%80%D0%BE%D0%BC.jpg" target="_blank" rel="noopener">Общественное достояние</a></figcaption>
+    </figure>
+    <figure class="poster" data-speed="0.1">
+      <img src="assets/img/poster-safo.jpg" width="791" height="1200" loading="lazy" alt="Плакат 1929 года, конструктивистская композиция из красных букв и пачки папирос">
+      <span class="stamp">Архивный документ, 1929<br>Не реклама</span>
+      <figcaption>А. Зеленский, 1929. <a href="https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BF%D0%B8%D1%80%D0%BE%D1%81%D1%8B_%D0%A1%D0%B0%D1%84%D0%BE.jpg" target="_blank" rel="noopener">Общественное достояние</a></figcaption>
+    </figure>
+  </div>
+  <p class="note col rv">Плакаты показаны как документы эпохи. Курение вредит здоровью.</p>
+
+  <div class="pair">
+    <figure class="ph ph--bw rv" data-speed="0.05">
+      <div class="ph-in"><img src="assets/img/rodchenko.jpg" width="900" height="659" loading="lazy" alt="Портрет в профиль: художник Александр Родченко с папиросой во рту"></div>
+      <figcaption>Художник Александр Родченко с папиросой, 1930. Фото Е. Лангмана. <a href="https://commons.wikimedia.org/wiki/File:1930._%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%A0%D0%BE%D0%B4%D1%87%D0%B5%D0%BD%D0%BA%D0%BE_%D1%81_%D0%BF%D0%B0%D0%BF%D0%B8%D1%80%D0%BE%D1%81%D0%BE%D0%B9.jpg" target="_blank" rel="noopener">Общественное достояние</a></figcaption>
+    </figure>
+    <figure class="ph ph--small rv" data-speed="-0.06">
+      <div class="ph-in"><img src="assets/img/andreev.jpg" width="397" height="561" loading="lazy" alt="Старый снимок: сельский работник закуривает в поле"></div>
+      <figcaption>«Закурил». Н. Андреев, 1924. <a href="https://commons.wikimedia.org/wiki/File:Lit_a_Cigarette._Farm_Labourer.jpg" target="_blank" rel="noopener">Общественное достояние</a></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ========== ВОЙНА ========== -->
+<section id="war" class="chapter" data-scene="war" data-year="1941">
+  <span class="ghost ghost--r" data-speed="0.2">1941</span>
+  <div class="col">
+    <p class="era rv">Глава 1 · 1941–1945</p>
+    <h2 class="rv">Двадцать граммов в сутки</h2>
+    <div class="stat rv">
+      <b class="num">20 г</b>
+      <span>махорки в сутки на бойца и семь книжек курительной бумаги в месяц. Лётному составу вместо махорки полагались папиросы первого сорта.</span>
+      <cite>Приказ НКО СССР № 312 от 22.09.1941. <a href="https://meganorm.ru/mega_doc/norm/normy/5/normy_prodovolstvennogo_snabzheniya_krasnoy_armii_vvedeny.html" target="_blank" rel="noopener">Текст норм</a></cite>
+    </div>
+    <p class="rv">Табак стал снабжением, как хлеб и сахар. Привычка уходила на фронт вместе с человеком и вместе с ним возвращалась домой. В 1945 году, пишет «Коммерсантъ», по приказу Сталина построили Краснодарскую табачную фабрику: снабжать армию махоркой.</p>
+    <p class="rv">Самая известная песня об этом написана на Южном фронте в 1941 году. Называется «Давай закурим», музыка Модеста Табачникова (это настоящая фамилия), стихи Ильи Френкеля. В январе 1942-го стихи напечатала «Комсомольская правда», позже песню пела Клавдия Шульженко.</p>
+    <p class="src rv"><a href="https://www.kommersant.ru/doc/177271" target="_blank" rel="noopener">Коммерсантъ, 07.05.1997</a> · <a href="https://ru.wikipedia.org/wiki/%D0%94%D0%B0%D0%B2%D0%B0%D0%B9_%D0%B7%D0%B0%D0%BA%D1%83%D1%80%D0%B8%D0%BC" target="_blank" rel="noopener">«Давай закурим», Википедия</a></p>
+  </div>
+  <figure class="ph ph--xl ph--bw rv" data-speed="0.04">
+    <div class="ph-in"><img src="assets/img/kursk.jpg" width="1199" height="782" loading="lazy" alt="Советские генералы в окопе над картой, один из них держит сигарету"></div>
+    <figcaption>Командование Центрального фронта перед Курской битвой, район станции Поныри, июнь 1943 года. С сигаретой — командующий 16-й воздушной армией С. И. Руденко. Автор неизвестен, архив Минобороны России. <a href="https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D1%84%D1%80%D0%BE%D0%BD%D1%82%D0%B0_%D0%BF%D0%B5%D1%80%D0%B5%D0%B4_%D0%9A%D1%83%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%B1%D0%B8%D1%82%D0%B2%D0%BE%D0%B9.jpg" target="_blank" rel="noopener">CC BY 4.0</a></figcaption>
+  </figure>
+</section>
+
+<!-- ========== ПОРТРЕТ 50-х ========== -->
+<section id="fifties" class="chapter" data-scene="fifties" data-year="1958">
+  <span class="ghost" data-speed="-0.14">1958</span>
+  <div class="col">
+    <p class="era rv">Глава 2 · 1950–1960-е</p>
+    <h2 class="rv">Портрет: человек с папиросой</h2>
+    <p class="tag rv">Собирательный образ. Такого человека не было, но таких людей было очень много.</p>
+    <div class="portrait">
+      <p class="rv">Москва, 1958 год. Николаю Петровичу сорок лет, он мастер на заводе, в войну служил связистом. Курить начал на фронте, как и половина его цеха.</p>
+      <p class="rv">День начинается на кухне: форточка, первая папироса натощак и кашель, который он давно не замечает. В кармане «Беломор», двадцать пять штук в пачке, дешёвый, самый массовый в стране. Для начальства и особых случаев есть «Казбек» со всадником на коробке.</p>
+      <p class="rv">На заводе перекур считается частью смены. В курилке решают то, что не решили на планёрке. Вечером он курит на лестничной клетке с соседом и потом дома у окна. Сын видит его с папиросой каждый день и думает, что так выглядит взрослый мужчина.</p>
+      <p class="rv">Никто не называет это проблемой. Пепельница стоит в кабинете, в купе, в гостях. Врач скажет, что лучше бы поменьше, и на этом разговор закончится. Одышка на лестнице начнётся лет через двадцать, и связывать её с папиросой он не станет.</p>
+    </div>
+  </div>
+</section>
+
+<figure class="bleed" data-parallax>
+  <img src="assets/img/chess.jpg" width="2679" height="1755" loading="lazy" alt="Трое пожилых мужчин в кепках и шляпе играют в шахматы на скамейке бульвара">
+  <figcaption>Шахматисты на московском бульваре, 1960-е. Фото В. Ахломова, Главархив Москвы. <a href="https://commons.wikimedia.org/wiki/File:Chess_game_of_Moscow_Boulevard.jpg" target="_blank" rel="noopener">CC BY 4.0</a></figcaption>
+</figure>
+
+<section class="chapter chapter--tight" data-year="1960">
+  <div class="col">
+    <figure class="ph rv" data-speed="0.04">
+      <div class="ph-in"><img src="assets/img/medvezh.jpg" width="4928" height="3264" loading="lazy" alt="Письменный стол в музее: телефон, счёты, чернильный прибор, книга и две пачки папирос в пепельнице"></div>
+      <figcaption>Кабинет начальника строительства Беломорско-Балтийского канала в музее Медвежьегорска. На пепельнице две пачки: «Казбек» и «Беломорканал». Фото Visem. <a href="https://commons.wikimedia.org/wiki/File:Medvezhyegorsk_museum_20.JPG" target="_blank" rel="noopener">CC BY-SA 3.0</a></figcaption>
+    </figure>
+    <p class="rv">Марку «Беломорканал» создали в 1932 году на ленинградской фабрике имени Урицкого. Канал, в честь которого её назвали, строили заключённые. Самым известным курильщиком страны был Сталин с трубкой. По распространённой версии, он набивал её табаком из папирос «Герцеговина Флор», но первичных документов об этом мы не нашли.</p>
+    <div class="duo rv">
+      <div class="stat"><b class="num" data-to="102.5" data-dec="1">102,5</b><span>млрд папирос и сигарет выпустили в СССР в 1940 году</span></div>
+      <div class="stat"><b class="num" data-to="364.3" data-dec="1">364,3</b><span>млрд в 1975 году, примерно миллиард штук в день</span></div>
+    </div>
+    <p class="src rv"><a href="https://www.booksite.ru/fulltext/1/001/008/108/325.htm" target="_blank" rel="noopener">БСЭ, «Табачная промышленность»</a> · <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%BB%D0%BE%D0%BC%D0%BE%D1%80%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB_(%D0%BF%D0%B0%D0%BF%D0%B8%D1%80%D0%BE%D1%81%D1%8B)" target="_blank" rel="noopener">«Беломорканал»</a> · <a href="https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D1%86%D0%B5%D0%B3%D0%BE%D0%B2%D0%B8%D0%BD%D0%B0_%D0%A4%D0%BB%D0%BE%D1%80" target="_blank" rel="noopener">«Герцеговина Флор»</a></p>
+
+    <h3 class="rv">Тем временем в Лондоне</h3>
+    <blockquote class="quote rv">
+      <p>«Поэтому мы заключаем, что курение является фактором, причём важным, в возникновении рака лёгкого».</p>
+      <cite>Ричард Долл и Остин Брэдфорд Хилл, British Medical Journal, 30 сентября 1950. Перевод наш. <a href="https://csts.ua.edu/files/2019/01/1950-09-30-BMJ-Smoking-Carcinoma-of-the-Lung-Doll-Hill.pdf" target="_blank" rel="noopener">Оригинал статьи</a></cite>
+    </blockquote>
+    <div class="study rv">
+      <b>2 из 649</b>
+      <span>мужчин с раком лёгкого в их выборке не курили. Среди женщин с этим диагнозом некурящих было 19 из 60.</span>
+    </div>
+    <p class="rv">В 1954 году те же авторы показали более высокую смертность у курящих врачей. В январе 1964-го главный санитарный врач США Лютер Терри выпустил доклад: разобрано больше 7000 статей, курение названо причиной рака лёгкого. В советской заводской курилке эти журналы никто не читал.</p>
+    <p class="src rv"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2085438" target="_blank" rel="noopener">Doll &amp; Hill, BMJ, 1954</a> · <a href="https://profiles.nlm.nih.gov/spotlight/nn/feature/smoking" target="_blank" rel="noopener">Surgeon General, 1964</a></p>
+  </div>
+</section>
+
+<!-- ========== КУЛЬТУРА ========== -->
+<section id="culture" class="chapter" data-scene="culture" data-year="1965">
+  <div class="col">
+    <p class="era rv">Как это отражалось в жизни</p>
+    <h2 class="rv">Реклама не понадобилась</h2>
+    <p class="rv">После 1920-х брендовой рекламы табака в СССР почти не осталось: исследователи называют её несуществующей. Старкс пишет, что курение в стране росло «без массового производства и интенсивной рекламы». Его поддерживали паёк, быт, песни и экран.</p>
+    <p class="src rv"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2598552" target="_blank" rel="noopener">Perlman и др., Tobacco Control, 2007</a> · <a href="https://muse.jhu.edu/book/99516" target="_blank" rel="noopener">Starks, 2022</a></p>
+  </div>
+  <div class="spheres">
+    <article class="sphere rv" data-speed="0.05">
+      <h3>Литература</h3>
+      <p>Папиросы становятся знаком достатка. У Твардовского: «Я б не стал курить махорку, // А достал бы я „Казбек“».</p>
+      <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%B7%D0%B1%D0%B5%D0%BA_(%D0%BF%D0%B0%D0%BF%D0%B8%D1%80%D0%BE%D1%81%D1%8B)" target="_blank" rel="noopener">Источник</a>
+    </article>
+    <article class="sphere rv" data-speed="0.12">
+      <h3>Мультфильмы</h3>
+      <p>В «Ну, погоди!» Волк курит папиросы. У крокодила Гены в зубах трубка, хотя затянуться его так и не показали. В 2012 году это стало новостью.</p>
+      <a href="https://www.interfax.ru/russia/262824" target="_blank" rel="noopener">Интерфакс</a>
+    </article>
+    <article class="sphere rv" data-speed="0.03">
+      <h3>Плакаты против</h3>
+      <p>Параллельно шла антитабачная агитация. В книге Старкс есть плакат 1968 года, где лозунг Маяковского 1920-х о ядовитости никотина обращён к новому поколению курильщиков.</p>
+      <a href="https://www.themoscowtimes.com/2023/06/11/tricia-starks-takes-on-cigarettes-and-soviets-smoking-in-the-ussr-a81472" target="_blank" rel="noopener">The Moscow Times</a>
+    </article>
+    <article class="sphere rv" data-speed="0.09">
+      <h3>Рок</h3>
+      <p>В 1989 году у группы «Кино» выходит песня «Пачка сигарет». Весь альбом сначала хотели назвать так же. Написана она в Алма-Ате, где Виктор Цой снимался в «Игле».</p>
+      <a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%87%D0%BA%D0%B0_%D1%81%D0%B8%D0%B3%D0%B0%D1%80%D0%B5%D1%82_(%D0%BF%D0%B5%D1%81%D0%BD%D1%8F)" target="_blank" rel="noopener">Источник</a>
+    </article>
+  </div>
+
+  <div class="cinema">
+    <div class="col">
+      <h3 class="rv">Что посмотреть</h3>
+      <p class="rv">Даём ссылки, а не кадры: эти фильмы охраняются авторским правом. В них могут быть сцены курения. Курение вредит здоровью.</p>
+    </div>
+    <div class="tickets" tabindex="0" aria-label="Фильмы, лента прокручивается в сторону">
+      <a class="ticket" href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D1%81%D1%82%D0%B0%D0%B2%D0%B0_%D0%98%D0%BB%D1%8C%D0%B8%D1%87%D0%B0" target="_blank" rel="noopener"><small>Киностудия им. Горького · 1964</small><b>Застава Ильича</b><span>Реж. М. Хуциев. В титрах есть роль Олега Видова: «прохожий с сигаретой».</span></a>
+      <a class="ticket" href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D0%BD%D0%B0%D0%B4%D1%86%D0%B0%D1%82%D1%8C_%D0%BC%D0%B3%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%B8%D0%B9_%D0%B2%D0%B5%D1%81%D0%BD%D1%8B" target="_blank" rel="noopener"><small>Киностудия им. Горького · 1973</small><b>Семнадцать мгновений весны</b><span>Реж. Т. Лиознова. Штирлиц в исполнении Тихонова, пишет «Коммерсантъ», «много курил».</span></a>
+      <a class="ticket" href="https://www.mosfilm.ru/cinema/films/sluzhebnyy-roman/" target="_blank" rel="noopener"><small>Мосфильм · 1977</small><b>Служебный роман</b><span>Реж. Э. Рязанов. Секретарша Верочка в одной из первых сцен с сигаретой в руке.</span></a>
+      <a class="ticket" href="https://www.mosfilm.ru/cinema/films/moskva-slezam-ne-verit/" target="_blank" rel="noopener"><small>Мосфильм · 1979</small><b>Москва слезам не верит</b><span>Реж. В. Меньшов. В фильме звучит «Давай закурим» в исполнении Шульженко.</span></a>
+      <a class="ticket" href="https://ru.wikipedia.org/wiki/%D0%98%D0%B3%D0%BB%D0%B0_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)" target="_blank" rel="noopener"><small>Казахфильм · 1988</small><b>Игла</b><span>Реж. Р. Нугманов. В финале раненый герой Цоя поднимается, закуривает и уходит.</span></a>
+      <a class="ticket ticket--doc" href="https://rutube.ru/video/f0a3182c4d4585f0a1370a3e8c3fa65b/" target="_blank" rel="noopener"><small>Киножурнал «Здоровье» № 100 · 1990</small><b>Предупредить дурную привычку</b><span>Подлинная хроника: разговор с подростками о курении в школе. RuTube, канал Госархива кинофотофонодокументов.</span></a>
+    </div>
+    <p class="src col">Что именно есть в кадре, мы знаем из описаний: <a href="https://www.kommersant.ru/doc/6013643" target="_blank" rel="noopener">Коммерсантъ, 2024</a> · <a href="https://weekend.rambler.ru/filmy/54881651-10-kinolyapov-v-sovetskoy-komedii-sluzhebnyy-roman/" target="_blank" rel="noopener">Рамблер</a></p>
+  </div>
+</section>
+
+<!-- ========== 70–80-е ========== -->
+<section id="seventies" class="chapter" data-scene="seventies" data-year="1979">
+  <span class="ghost ghost--r" data-speed="0.16">1979</span>
+  <div class="col">
+    <p class="era rv">Глава 3 · 1970–1980-е</p>
+    <h2 class="rv">Перекур</h2>
+    <div class="duo rv">
+      <div class="stat"><b class="num">≈60%</b><span>мужчин курят в стране с середины 1970-х</span></div>
+      <div class="stat"><b class="num" data-to="18.4" data-dec="1">18,4%</b><span>женщин: оценка исследований LRC и MONICA для 1985 года</span></div>
+    </div>
+    <p class="src rv"><a href="https://doi.org/10.1186/s12889-020-08464-4" target="_blank" rel="noopener">Shkolnikov и др., 2020</a>. Эти опросы проводили не по всей стране, а в отдельных городах.</p>
+    <p class="tag rv">Собирательный образ. Ленинград, 1979 год.</p>
+    <div class="portrait">
+      <p class="rv">Виктору тридцать четыре, он инженер в НИИ. Лестничная площадка между этажами служит ему клубом. Там узнают новости, спорят о футболе и занимают до зарплаты. Сигарету можно стрельнуть у любого, это даже просьбой не считается.</p>
+      <p class="rv">Удачей считаются болгарские: производство сигарет в Болгарии за 1960–1975 годы выросло с 10 до 71,4 млрд штук. Отечественные пропадают из киосков всё чаще. Жена Виктора курит только на работе и в гостях, дома при детях стесняется. На торце пачки теперь есть мелкая надпись от Минздрава, её никто не читает.</p>
+    </div>
+  </div>
+
+  <div class="collage">
+    <figure class="ph ph--bw rv" data-speed="0.14">
+      <div class="ph-in"><img src="assets/img/cafe.jpg" width="3328" height="2015" loading="lazy" alt="Люди за столиками уличного кафе на проспекте, рядом стоит мужчина в плаще"></div>
+      <figcaption>Москва, у кафе «Метелица», 1975. Fortepan / Urbán Tamás. <a href="https://commons.wikimedia.org/wiki/File:Ice_cream_Fortepan_89330.jpg" target="_blank" rel="noopener">CC BY-SA 3.0</a></figcaption>
+    </figure>
+    <figure class="ph ph--bw rv" data-speed="0.03">
+      <div class="ph-in"><img src="assets/img/arbat.jpg" width="3058" height="1929" loading="lazy" alt="Широкий тротуар Калининского проспекта, идут люди, вдали высотные дома"></div>
+      <figcaption>Калининский проспект (сейчас Новый Арбат), 1975. Fortepan / Urbán Tamás. <a href="https://commons.wikimedia.org/wiki/File:Novij_Arbat_(ekkor_Kalinyin)_sug%C3%A1r%C3%BAt._Fortepan_89332.jpg" target="_blank" rel="noopener">CC BY-SA 3.0</a></figcaption>
+    </figure>
+  </div>
+
+  <div class="col">
+    <div class="split rv">
+      <figure class="ph ph--pack" data-speed="-0.05">
+        <div class="ph-in"><img src="assets/img/apollo.jpg" width="1600" height="1377" loading="lazy" alt="Белая пачка юбилейных сигарет «Союз — Аполлон», 1975 год"></div>
+        <figcaption>Музейный экспонат, 1975. San Diego Air &amp; Space Museum. <a href="https://commons.wikimedia.org/wiki/File:121825win010_Curatorial_Collection_Image_(55181953054).jpg" target="_blank" rel="noopener">Общественное достояние</a></figcaption>
+      </figure>
+      <div>
+        <h3>Первая дверь</h3>
+        <p>В 1975 году фабрика «Ява» вместе с Philip Morris выпустила сигареты в честь стыковки кораблей «Союз» и «Аполлон». Их делали примерно до 1980 года. Старкс считает, что с этого началось партнёрство советской отрасли с американской компанией.</p>
+        <p class="src"><a href="https://www.kommersant.ru/doc/228849" target="_blank" rel="noopener">Коммерсантъ, 28.10.1999</a> · <a href="https://en.wikipedia.org/wiki/Apollo-Soyuz_(cigarette)" target="_blank" rel="noopener">Wikipedia</a></p>
+      </div>
+    </div>
+    <h3 class="rv">Первые попытки что-то изменить</h3>
+    <div class="clip clip--l rv" data-speed="0.05">
+      <small>Вечерняя Москва · 27 марта 2018</small>
+      <p>«Ровно сорок лет назад Минздрав стал робко предупреждать, что курение вредит здоровью: появились маленькие надписи на торце сигаретной пачки».</p>
+      <a href="https://vm.ru/society/317305-futlyar-dlya-futlyara" target="_blank" rel="noopener">Источник</a>
+    </div>
+    <p class="note rv">С датой источники спорят: одни пишут про 1978 год, другие про 1985-й. Приказ Минздрава СССР найти не удалось.</p>
+    <div class="clip clip--r rv" data-speed="0.09">
+      <small>Коммерсантъ Власть · М. Трофименков · 6 ноября 2006</small>
+      <p>«Мало кто помнит, что первая попытка искоренить курение в кино была предпринята отнюдь не в Голливуде, а в Советском Союзе в конце 1970-х годов».</p>
+      <a href="https://www.kommersant.ru/doc/719302" target="_blank" rel="noopener">Источник</a>
+    </div>
+    <p class="rv">Сам рынок при этом уже трещал. В конце 1969 года в ЦК КПСС ушла записка: на 1970-й нужно не меньше 370 млрд штук, а ресурсов 345,2 млрд. Торговля табаком в РСФСР повсеместно шла с перебоями.</p>
+    <p class="src rv"><a href="https://www.kommersant.ru/doc/4143185" target="_blank" rel="noopener">Е. Жирнов, Коммерсантъ, 02.11.2019</a> · <a href="https://www.booksite.ru/fulltext/1/001/008/108/325.htm" target="_blank" rel="noopener">БСЭ</a></p>
+  </div>
+</section>
+
+<!-- ========== 1990 ========== -->
+<section id="riots" data-scene="riots" data-year="1990">
+  <figure class="bleed bleed--tall" data-parallax>
+    <img src="assets/img/queue1990.jpg" width="1920" height="1478" loading="lazy" alt="Толпа стоит в очереди к табачному киоску на московской улице, август 1990 года">
+    <figcaption>Очередь в табачный киоск, Москва, август 1990 года. Фото В. Потулова, Главархив Москвы. <a href="https://commons.wikimedia.org/wiki/File:Tobacco_kiocks_in_Moscow_August_1990.jpg" target="_blank" rel="noopener">CC BY 4.0</a></figcaption>
+  </figure>
+  <div class="chapter">
+    <div class="col">
+      <p class="era rv">Лето 1990 года</p>
+      <h2 class="rv">Сигарет нет</h2>
+      <p class="rv">26 июля 1990 года в Перми в табачном магазине в центре города закончился товар. Очередь перекрыла улицу, остановила трамваи и двинулась к горисполкому. Это назвали табачным бунтом.</p>
+      <div class="clip clip--l rv" data-speed="0.06">
+        <small>Журнал TIME · 10 сентября 1990 · перевод наш</small>
+        <p>«„Нет табака — нет работы!“ — кричали разъярённые рабочие в Куйбышеве, готовые скорее бастовать, чем переходить на что-то другое. В уральской Перми толпы, изнывающие без никотина, перекрыли главную улицу».</p>
+        <a href="https://time.com/archive/6715875/soviet-union-another-burning-issue/" target="_blank" rel="noopener">Источник</a>
+      </div>
+      <div class="stat rv">
+        <b class="num">$16</b>
+        <span>просили на углу за банку использованных окурков, пишет американская Deseret News. Протесты дошли до Москвы и Ленинграда.</span>
+        <cite><a href="https://www.deseret.com/1990/9/14/18881169/u-s-cigarettes-going-to-soviets/" target="_blank" rel="noopener">Deseret News, 14.09.1990</a></cite>
+      </div>
+      <p class="rv">Власти называли поломки на фабриках, спекулянтов и сокращение импорта из Болгарии. Популярное объяснение другое: около половины фабрик РСФСР одновременно встали на переоборудование, но точное число источники дают разное. В Москве ввели нормы, TIME пишет про пять пачек в месяц. В сентябре Philip Morris и R. J. Reynolds договорились поставить в СССР больше 20 и 14 млрд сигарет.</p>
+      <p class="src rv"><a href="https://www.kommersant.ru/doc/8844565" target="_blank" rel="noopener">Коммерсантъ-Прикамье</a> · <a href="https://moskvichmag.ru/?p=89226" target="_blank" rel="noopener">Москвич Mag, 2020</a></p>
+      <figure class="ph ph--bw rv" data-speed="0.05">
+        <div class="ph-in"><img src="assets/img/novosl1990.jpg" width="1920" height="1909" loading="lazy" alt="Плотная очередь людей на площади у спуска в подземный переход"></div>
+        <figcaption>Очередь у метро «Новослободская», август 1990 года. За чем стояли люди, подпись не сообщает. Фото С. Тетерина, Главархив Москвы. <a href="https://commons.wikimedia.org/wiki/File:Square_on_Novoslobodskaya_August_1990.jpg" target="_blank" rel="noopener">CC BY 4.0</a></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 90-е ========== -->
+<section id="nineties" class="chapter" data-scene="nineties" data-year="1996">
+  <span class="ghost" data-speed="-0.2">1996</span>
+  <div class="col">
+    <p class="era rv">Глава 4 · 1990-е</p>
+    <h2 class="rv">Новые хозяева</h2>
+    <p class="rv">После распада СССР международные табачные компании стали покупать советские фабрики. В октябре 1994 года BAT получила контрольный пакет «Явы». Примерно тогда же Philip Morris пришёл в Краснодар, а R. J. Reynolds вложился в ленинградскую фабрику имени Урицкого.</p>
+    <div class="trio rv">
+      <div class="stat"><b class="num">$1,7 млрд</b><span>вложили в России в 1992–2000 годах</span></div>
+      <div class="stat"><b class="num">60%+</b><span>рынка заняли к концу этого срока</span></div>
+      <div class="stat"><b class="num">×4</b><span>выросли мощности купленных фабрик</span></div>
+    </div>
+    <div class="stat rv">
+      <b class="num">до 50%</b>
+      <span>всех рекламных щитов Москвы и 75% пластиковых пакетов в России к середине 1990-х рекламировали табак.</span>
+      <cite><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2598552" target="_blank" rel="noopener">Perlman и др., Tobacco Control, 2007</a></cite>
+    </div>
+  </div>
+
+  <div class="collage collage--mix">
+    <figure class="ph rv" data-speed="0.12">
+      <div class="ph-in"><img src="assets/img/nikolskaya95.jpg" width="1175" height="1765" loading="lazy" alt="Улица в центре Москвы, толпа под зонтами, яркие вывески, 1995 год"></div>
+      <figcaption>Большая Никольская, Москва, 1995. Фото Joe McGowan. <a href="https://commons.wikimedia.org/wiki/File:Moscow2_1995.jpg" target="_blank" rel="noopener">CC BY 2.0</a></figcaption>
+    </figure>
+    <figure class="ph ph--bw rv" data-speed="0.02">
+      <div class="ph-in"><img src="assets/img/ordynka92.jpg" width="1600" height="1067" loading="lazy" alt="Улица Большая Ордынка с припаркованными машинами, 1992 год"></div>
+      <figcaption>Большая Ордынка, июнь 1992 года. Фото С. Поминова, Главархив Москвы. <a href="https://commons.wikimedia.org/wiki/File:Bolshaya_Ordynka_1992.jpg" target="_blank" rel="noopener">CC BY 4.0</a></figcaption>
+    </figure>
+  </div>
+
+  <div class="col">
+    <p class="tag rv">Собирательный образ. Москва, 1997 год.</p>
+    <div class="portrait">
+      <p class="rv">Лене двадцать три, у неё первая работа в офисе. Сигарета для неё значит примерно то же, что новые джинсы: другая жизнь, которую показывают на щитах вдоль дороги. Ларёк стоит у метро и продаёт поштучно. Её мать в этом возрасте не курила, а бабушка считала это неприличным.</p>
+    </div>
+    <div class="duo rv">
+      <div class="stat"><b class="num">6,9 → 14,8%</b><span>доля курящих женщин, 1992–2003</span></div>
+      <div class="stat"><b class="num">73%</b><span>мужчин 25–34 лет курили в 1996 году</span></div>
+    </div>
+    <p class="rv">Авторы большого исследования 2007 года считают рост среди женщин прямым следствием прихода этих компаний и их работы с женской аудиторией. Внутренние документы BAT, которые разбирали Гилмор и Макки, показывают: индустрия нацеливалась на молодёжь и женщин.</p>
+    <p class="rv">Закон о рекламе 1995 года, пишут те же исследователи, опирался на добровольный кодекс самой индустрии. От него осталось требование: реклама сопровождается предупреждением, а в эфире на него дают не меньше трёх секунд.</p>
+    <p class="src rv"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2598552" target="_blank" rel="noopener">Perlman и др., 2007</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1759634/" target="_blank" rel="noopener">McKee и др., 1998</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1747849" target="_blank" rel="noopener">Gilmore &amp; McKee, 2004</a> · <a href="https://www.consultant.ru/document/cons_doc_LAW_7234/8f46677738229803fb1cf020210e75351cc4c1ae/" target="_blank" rel="noopener">№ 108-ФЗ, ст. 16</a></p>
+    <div class="warn rv"><strong>Курение вредит вашему здоровью.</strong> Марки и компании мы называем только там, где без этого нельзя понять историю.</div>
+  </div>
+</section>
+
+<!-- ========== ПОЧЕМУ ========== -->
+<section id="turn" class="chapter" data-scene="turn" data-year="2008">
+  <span class="ghost ghost--r" data-speed="0.15">2008</span>
+  <div class="col">
+    <p class="era rv">Глава 5 · 2000-е</p>
+    <h2 class="rv">Почему так дальше было нельзя</h2>
+    <p class="rv">Первый закон об ограничении курения вышел в 2001 году: продажа только с 18 лет и надпись на 4% площади пачки. Газета St Petersburg Times назвала его хрестоматийным примером лоббистского искусства.</p>
+    <div class="facts">
+      <div class="fact rv"><b>350–500 тыс.</b><span>человек ежегодно гибнут от болезней, связанных с табаком. Оценка в правительственной Концепции 2010 года. Позже Халтурина и соавторы посчитали строже: больше 266 тыс. смертей в 2019 году, из них 58% от болезней сердца и сосудов.</span></div>
+      <div class="fact rv"><b>≈80%</b><span>жителей страны каждый день дышат чужим дымом, сказано в той же Концепции.</span></div>
+      <div class="fact rv"><b>78,6%</b><span>посетителей ресторанов сталкивались с табачным дымом в 2009 году, опрос GATS.</span></div>
+      <div class="fact rv"><b>27,3%</b><span>подростков 13–15 лет употребляли табак в 2004 году.</span></div>
+    </div>
+    <p class="src rv"><a href="https://rulaws.ru/amp/goverment/Rasporyazhenie-Pravitelstva-RF-ot-23.09.2010-N-1563-r/" target="_blank" rel="noopener">Распоряжение № 1563-р</a> · <a href="https://doi.org/10.17323/demreview.v8i1.12394" target="_blank" rel="noopener">Халтурина и др., 2021</a> · <a href="https://stacks.cdc.gov/view/cdc/148709/cdc_148709_DS1.pdf" target="_blank" rel="noopener">GATS 2009/2016</a> · <a href="https://journals.rcsi.science/0040-3660/article/view/255128" target="_blank" rel="noopener">Salagai и др., 2024</a></p>
+    <p class="rv">Поворотным стал 2008 год. Россия присоединилась к Рамочной конвенции ВОЗ по борьбе против табака и приняла на себя её обязательства. С этого же времени, показывает работа Школьникова и коллег, начинает снижаться доля курящих мужчин.</p>
+    <figure class="vid rv">
+      <video controls preload="none" playsinline poster="assets/img/cdc-poster.jpg" src="assets/video/cdc-turlington.webm" aria-label="Социальная реклама CDC: Кристи Тёрлингтон рассказывает о болезни отца и о том, как бросала курить"></video>
+      <figcaption>Так об этом уже говорили в мире. Ролик CDC (США): модель Кристи Тёрлингтон рассказывает, как потеряла отца из-за рака лёгких и как бросала сама. На английском. <a href="https://commons.wikimedia.org/wiki/File:Celebrities_Against_Smoking_Christy_Turlington_PSA.webm" target="_blank" rel="noopener">Общественное достояние</a></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ========== ДОРОГА К ЗАКОНУ ========== -->
+<section id="road" class="hs" data-scene="law13" data-at="0.5" data-year="2013" aria-label="Хронология: путь к закону">
+  <div class="hs-in">
+    <div class="hs-head"><p class="era">Хронология</p><h2>Дорога к закону</h2></div>
+    <ol class="hs-track">
+      <li><time>1995</time><p>Закон о рекламе. Реклама табака идёт только с предупреждением о вреде.</p></li>
+      <li><time>2001</time><p>№ 87-ФЗ. Продажа с 18 лет, надпись на пачке, первые ограничения курения.</p></li>
+      <li><time>2008</time><p>№ 51-ФЗ. Россия присоединяется к конвенции ВОЗ.</p></li>
+      <li><time>2010</time><p>Концепция правительства на 2010–2015 годы с целью снизить курение на 10–15%.</p></li>
+      <li><time>2012</time><p>Минздравсоцразвития утверждает картинки для пачек, приказ № 490н.</p></li>
+      <li class="hot"><time>23.02.2013</time><p>Подписан № 15-ФЗ. В Совете Федерации за него проголосовали 125 сенаторов, 4 против, 6 воздержались.</p></li>
+      <li class="hot"><time>01.06.2013</time><p>Первый этап: школы, больницы, театры, стадионы, госорганы, рабочие места, подъезды, самолёты. Запрет рекламы.</p></li>
+      <li><time>12.06.2013</time><p>Нельзя выпускать пачки без картинок о последствиях.</p></li>
+      <li><time>11.2013</time><p>Появляются штрафы, для граждан от 500 до 1500 ₽.</p></li>
+      <li class="hot"><time>01.06.2014</time><p>Второй этап: кафе, рестораны, поезда, гостиницы, рынки. Сигареты убирают с витрин и из киосков.</p></li>
+      <li><time>2016</time><p>Запрет слов «лёгкие» и «мягкие», картинка на половину пачки.</p></li>
+      <li><time>2020</time><p>№ 303-ФЗ. Вейпы приравнены к табаку в запретах.</p></li>
+      <li><time>2023</time><p>№ 178-ФЗ. Вейпы нельзя продавать несовершеннолетним.</p></li>
+      <li><time>2026</time><p>№ 186-ФЗ. С 1 марта 2027 года регионы смогут в порядке эксперимента запрещать продажу вейпов.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ========== 2013 ========== -->
+<section id="law13" class="chapter" data-scene="law13" data-year="2013">
+  <span class="ghost" data-speed="-0.15">2013</span>
+  <div class="col">
+    <p class="era rv">Глава 6 · 2013</p>
+    <h2 class="rv">Закон</h2>
+    <p class="rv">Федеральный закон № 15-ФЗ «Об охране здоровья граждан от воздействия окружающего табачного дыма и последствий потребления табака» подписан 23 февраля 2013 года. Страна встретила его без восторга.</p>
+    <div class="poll rv">
+      <div class="poll-row"><span>Поддерживают закон в целом</span><i style="--v:45"></i><b>45%</b></div>
+      <div class="poll-row"><span>Против, считают слишком жёстким</span><i style="--v:49"></i><b>49%</b></div>
+      <div class="poll-row"><span>За запрет рекламы и спонсорства</span><i style="--v:79"></i><b>79%</b></div>
+      <div class="poll-row"><span>За запрет в общественных местах</span><i style="--v:76"></i><b>76%</b></div>
+      <div class="poll-row"><span>За запрет образа курящего в кино и театре</span><i style="--v:56"></i><b>56%</b></div>
+    </div>
+    <p class="src rv"><a href="https://wciom.ru/analytical-reviews/analiticheskii-obzor/antitabachnyj-zakon-oczenka-i-posledstviya" target="_blank" rel="noopener">ВЦИОМ, февраль 2013, 1600 опрошенных</a></p>
+    <p class="note rv">Посмотрите на рисунок: на теле появляются первые лепестки.</p>
+  </div>
+
+  <div class="clips">
+    <div class="clip clip--l rv" data-speed="0.14">
+      <small>Российская газета · 25 февраля 2013</small>
+      <h4>«РГ» публикует антитабачный закон</h4>
+      <p>«Не успел выкурить утреннюю сигарету у себя дома, а по дороге к метро нет ни одного большого магазина, чтобы купить вожделенную пачку, — что ж, терпи до вечера».</p>
+      <a href="https://rg.ru/2013/02/26/zakon-antitabak.html" target="_blank" rel="noopener">Источник</a>
+    </div>
+    <div class="clip clip--r rv" data-speed="0.04">
+      <small>РИА Новости · 1 июня 2013</small>
+      <h4>Курильщиков выставят за дверь</h4>
+      <p>«По их подсчетам, когда вступят в силу все запретительные меры, 44 миллиона курящих россиян 15-17 раз в день будут являться правонарушителями».</p>
+      <a href="https://ria.ru/20130601/940695317.html" target="_blank" rel="noopener">Источник</a>
+    </div>
+    <div class="clip clip--l rv" data-speed="0.1">
+      <small>РИА Новости · 1 июня 2013 · председатель Госдумы С. Нарышкин</small>
+      <p>«По данным экспертов, Россия теряет от 100 до 200 тысяч человеческих жизней, и это, конечно, большая цена».</p>
+      <a href="https://ria.ru/20130601/940733193.html" target="_blank" rel="noopener">Источник</a>
+    </div>
+  </div>
+
+  <div class="col">
+    <h3 class="rv">Волк и закон</h3>
+    <p class="rv">Спор о кино начался ещё до антитабачного закона. В 2012 году «Интерфакс» вышел с заголовком «Крокодил Гена и Волк бросают курить»: со ссылкой на анонимный источник сообщалось, что сцены могут вырезать. Руководство компании этого не подтвердило, решения в статье нет.</p>
+    <div class="clip clip--r rv" data-speed="0.06">
+      <small>Интерфакс · 29 августа 2012 · глава Роспотребнадзора Г. Онищенко</small>
+      <p>«Все-таки в данном случае Волк — отрицательный герой. Надо, наоборот, его показывать и даже увеличить кратность. Не надо вокруг Волка делать погоду».</p>
+      <a href="https://www.interfax.ru/russia/262824" target="_blank" rel="noopener">Источник</a>
+    </div>
+    <p class="rv">Закон 2013 года сохранил старую формулу: в новых фильмах для взрослых курить в кадре нельзя, если это не «неотъемлемая часть художественного замысла». В фильмах для детей такой оговорки нет. При показе фильмов со сценами курения вещатель обязан дать социальную рекламу о вреде.</p>
+    <p class="src rv"><a href="https://www.consultant.ru/document/cons_doc_LAW_142515/7efecf4e41c5e09a622d8705967ba07695b82a37/" target="_blank" rel="noopener">Ст. 16 № 15-ФЗ</a></p>
+  </div>
+</section>
+
+<!-- ========== 2014 ========== -->
+<section id="law14" class="chapter" data-scene="law14" data-year="2014">
+  <span class="ghost ghost--r" data-speed="0.18">2014</span>
+  <div class="col">
+    <p class="era rv">1 июня 2014 года</p>
+    <h2 class="rv">Только под открытым небом</h2>
+    <p class="rv">Второй этап касался всех: кафе и рестораны, поезда дальнего следования, гостиницы, рынки. Киоски больше не могли продавать сигареты, пачки исчезли с витрин.</p>
+  </div>
+
+  <div class="clips">
+    <div class="clip clip--r rv" data-speed="0.12">
+      <small>Российская газета · 1 июня 2014 · Т. Батенёва, М. Грицюк, Е. Домчева</small>
+      <h4>В России начали действовать новые ограничения для курильщиков</h4>
+      <p>«С воскресенья, 1 июня, курить в России можно только под открытым небом». «Однако, как известно, строгость наших законов часто искупается необязательностью их исполнения».</p>
+      <a href="https://rg.ru/2014/06/01/antikurenie.html" target="_blank" rel="noopener">Источник</a>
+    </div>
+    <div class="clip clip--l rv" data-speed="0.03">
+      <small>РБК · 16 мая 2014</small>
+      <h4>Магазины спешно прячут табачные изделия под прилавки</h4>
+      <p>«Крупнейшие ретейлеры, как выяснил РБК, уже приступили к демонтажу оборудования, предназначенного для продажи табака».</p>
+      <a href="https://amp.rbc.ru/rbcnews/economics/16/05/2014/57041cc89a794761c0ce9ddf" target="_blank" rel="noopener">Источник</a>
+    </div>
+    <div class="clip clip--r rv" data-speed="0.09">
+      <small>Российская газета · 28 мая 2014</small>
+      <h4>Уральские рестораны понесут потери из-за запрета на курение</h4>
+      <p>«Но накануне планируем устроить масштабную „дымную“ вечеринку, чтобы, как перед введением „сухого закона“ в Америке, отпраздновать вступление в силу запрета на курение».</p>
+      <a href="https://rg.ru/2014/05/28/reg-urfo/kurenie.html" target="_blank" rel="noopener">Источник</a>
+    </div>
+    <div class="clip clip--l rv" data-speed="0.15">
+      <small>РБК · А. Федотова · 2 июня 2014</small>
+      <h4>Дело табак: как курильщики и бизнес пережили новые запреты</h4>
+      <p>«Продавщицы, уставшие отвечать на один и тот же вопрос, теперь просто показывают на таблички „Сигарет нет“».</p>
+      <a href="https://amp.rbc.ru/rbcnews/society/02/06/2014/57041dcb9a794761c0cea4fa" target="_blank" rel="noopener">Источник</a>
+    </div>
+    <div class="clip clip--r rv" data-speed="0.06">
+      <small>РИА Новости · 2 июня 2014</small>
+      <h4>Война дымов, или Как Россия защитилась от курения</h4>
+      <p>«В кафе-баре Rocks РИА Новости сообщили, что в воскресенье количество посетителей уменьшилось почти вдвое». В Красноярске при этом: «запрет на курение пока никак не отразился на числе посетителей».</p>
+      <a href="https://ria.ru/20140602/1010357158.html" target="_blank" rel="noopener">Источник</a>
+    </div>
+    <div class="clip clip--l rv" data-speed="0.11">
+      <small>РБК · 17 октября 2014</small>
+      <h4>Год с антитабачным законом</h4>
+      <p>«После вступления в силу антитабачного закона число курильщиков в стране снизилось на 7,5 млн человек, рапортует Минздрав». Представитель отрасли возразил: «Делать заявления на основании опроса ВЦИОМ о реальном снижении числа курильщиков ‒ это, мягко говоря, необъективно».</p>
+      <a href="https://amp.rbc.ru/rbcnews/business/17/10/2014/543bd587cbb20f6ce4a09fed" target="_blank" rel="noopener">Источник</a>
+    </div>
+  </div>
+  <p class="note col rv">Цитаты приведены как обзор печати: отрывок, издание и дата, ссылка на оригинал.</p>
+
+  <div class="col">
+    <h3 class="rv">Было и стало: потяните ползунок</h3>
+  </div>
+  <div class="ba rv" style="--pos:50%">
+    <img class="ba-a" src="assets/img/tabac2009.jpg" width="2248" height="1143" loading="lazy" alt="Киоск 2009 года: витрина заполнена рядами сигаретных пачек">
+    <img class="ba-b" src="assets/img/tabak2020.jpg" width="2012" height="4805" loading="lazy" alt="Супермаркет 2020 года: белые безликие контейнеры с надписью «Табак»">
+    <span class="ba-tag ba-tag--a">2009</span><span class="ba-tag ba-tag--b">2020</span>
+    <span class="ba-line"></span>
+    <input type="range" min="0" max="100" value="50" aria-label="Сравнить витрину 2009 и 2020 годов">
+  </div>
+  <p class="cap col rv">Киоск в Волгограде, 2009. Фото michael clarke stuff, <a href="https://commons.wikimedia.org/wiki/File:Volgograd_Tabac_2009.jpg" target="_blank" rel="noopener">CC BY-SA 2.0</a>. Белые контейнеры в московском супермаркете, 2020. Фото Stolbovsky, <a href="https://commons.wikimedia.org/wiki/File:Cigarettes_in_Moscow_supermarket_01.jpg" target="_blank" rel="noopener">CC BY-SA 3.0</a>. Марки на снимке 2009 года размыты намеренно. Фото показаны как документы. Курение вредит здоровью.</p>
+
+  <div class="col">
+    <figure class="ph rv" data-speed="0.04">
+      <div class="ph-in"><img src="assets/img/kurilka.jpg" width="4320" height="2880" loading="lazy" alt="Навес с красной вывеской «Место для курения» во дворе жилого дома"></div>
+      <figcaption>Курильщиков выводят на улицу, под навес. Никольский посад, 2016. Фото А. Щекинова. <a href="https://commons.wikimedia.org/wiki/File:%D0%9A%D1%83%D1%80%D0%B8%D0%BB%D0%BA%D0%B0_%D0%B7%D0%B0_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%BC_%D0%9F%D0%BE%D1%81%D0%B0%D0%B4%D0%BE%D0%BC.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a></figcaption>
+    </figure>
+
+    <h3 class="rv">Сработал ли закон</h3>
+    <p class="rv">Опрос GATS сравнил 60 регионов в 2009 и 2016 годах. Доля потребляющих табак упала с 39,4 до 30,9%. С дымом в ресторанах стали сталкиваться в четыре раза реже, рекламу замечать втрое реже, а пачка подорожала больше чем в три раза.</p>
+    <div class="ladder rv">
+      <div><span>Дым в ресторанах</span><b>78,6 → 19,9%</b></div>
+      <div><span>Дым на работе</span><b>34,9 → 21,9%</b></div>
+      <div><span>Дым дома</span><b>34,7 → 23,1%</b></div>
+      <div><span>Замечали рекламу табака</span><b>68,0 → 23,1%</b></div>
+      <div><span>Цена пачки с поправкой на инфляцию</span><b>24,5 → 79,7 ₽</b></div>
+    </div>
+    <p class="src rv"><a href="https://stacks.cdc.gov/view/cdc/148709/cdc_148709_DS1.pdf" target="_blank" rel="noopener">GATS Comparison Fact Sheet, CDC/ВОЗ</a></p>
+    <p class="rv"><strong>Есть три оговорки.</strong> Опрос не доказывает, что всё сделал один закон: одновременно менялись цены, реклама и запреты. Школьников и соавторы относят начало снижения к 2008 году, до закона. У женщин картина неровная: молодые стали курить реже, а в среднем возрасте доля курящих выросла, особенно среди женщин с минимальным образованием.</p>
+    <p class="rv">Общество тоже приняло закон не целиком. В октябре 2014 года две трети опрошенных Левада-центром хотели ограничить курение в ресторанах, а не запретить полностью. 69% сказали, что на их жизни запреты никак не отразились. Табачные компании говорили о росте контрабанды: Euromonitor оценил его в 40%, до 3,3% рынка.</p>
+    <div class="stat rv">
+      <b class="num">≈48 000</b>
+      <span>смертей мужчин от болезней сердца и сосудов удалось избежать в 2008–2016 годах благодаря снижению курения, по расчёту Школьникова и соавторов. 79% из них пришлись бы на возраст до 65 лет. Это около 6% общего снижения таких смертей за те годы: заметный, но не главный вклад.</span>
+      <cite><a href="https://doi.org/10.1186/s12889-020-08464-4" target="_blank" rel="noopener">BMC Public Health, 2020</a> · <a href="https://www.levada.ru/2014/11/14/regulirovanie-oborota-tabachnyh-izdelij-i-kureniya/" target="_blank" rel="noopener">Левада, 2014</a> · <a href="https://amp.rbc.ru/rbcnews/business/17/10/2014/543bd587cbb20f6ce4a09fed" target="_blank" rel="noopener">РБК, 2014</a></cite>
+    </div>
+  </div>
+</section>
+
+<!-- ========== СЕГОДНЯ ========== -->
+<section id="today" class="chapter" data-scene="today" data-at="0.86" data-year="2026">
+  <span class="ghost" data-speed="-0.16">2026</span>
+  <div class="col">
+    <p class="era rv">Глава 7 · Сегодня</p>
+    <h2 class="rv">Портрет: человек без пепельницы</h2>
+    <p class="tag rv">Собирательный образ. Москва, 2026 год.</p>
+    <div class="portrait">
+      <p class="rv">Даше двадцать восемь. Пепельницу на столике кафе она последний раз видела школьницей. В поезде дымом не пахнет уже двенадцать лет. Сигарет в магазине она не видит вовсе: только белая коробка с надписью «Табак». Отца с папиросой на балконе она помнит, а её дети, скорее всего, такого не увидят.</p>
+      <p class="rv">Курильщик теперь выходит на улицу и чувствует, что это его личное дело. Часть знакомых Даши перешла на вейпы и уверена, что это не в счёт. Среди взрослых ими пользуются 9%, чаще всего молодые жители больших городов. Полувековых наблюдений, как у сигарет, у этой привычки пока нет.</p>
+    </div>
+    <p class="src rv"><a href="https://www.vedomosti.ru/society/articles/2025/05/31/1113301-kolumb-ne-vinovat" target="_blank" rel="noopener">ВЦИОМ, август 2024, по «Ведомостям»</a></p>
+  </div>
+
+  <figure class="bleed bleed--color" data-parallax>
+    <img src="assets/img/marathon.jpg" width="1600" height="1067" loading="lazy" alt="Бегуны на широкой дороге у Кремля во время Московского марафона">
+    <figcaption>Московский марафон, 2013. Фото Mika Stetsovski. <a href="https://commons.wikimedia.org/wiki/File:Moscow_Marathon_2013_(13658932184).jpg" target="_blank" rel="noopener">CC BY 2.0</a></figcaption>
+  </figure>
+
+  <div class="col col--wide">
+    <h3 class="rv">Из ста человек курят</h3>
+    <div class="years" role="group" aria-label="Выбор года">
+      <button type="button" data-y="1985">1985</button>
+      <button type="button" data-y="1992">1992</button>
+      <button type="button" data-y="2003">2003</button>
+      <button type="button" data-y="2009" class="on">2009</button>
+      <button type="button" data-y="2016">2016</button>
+      <button type="button" data-y="2024">2024</button>
+    </div>
+    <div class="crowds">
+      <div><p class="crowd-title">Мужчины <b id="men-n">61</b></p><div class="people people--men" id="men"></div></div>
+      <div><p class="crowd-title">Женщины <b id="women-n">22</b></p><div class="people people--women" id="women"></div></div>
+    </div>
+    <p class="src" id="people-src">GATS 2009, возраст 15+</p>
+
+    <h3 class="rv">Вся кривая</h3>
+    <p class="rv">Данные собраны разными способами, поэтому линии разорваны: сравнивать их точка в точку нельзя. Наведите курсор или нажмите на график.</p>
+    <div class="legend">
+      <span><i class="sw sw--men"></i>Мужчины</span>
+      <span><i class="sw sw--women"></i>Женщины</span>
+      <span><svg width="26" height="10" aria-hidden="true"><line x1="0" y1="5" x2="26" y2="5" stroke="currentColor" stroke-width="2"/><circle cx="13" cy="5" r="3.500" fill="currentColor"/></svg>RLMS</span>
+      <span><svg width="26" height="10" aria-hidden="true"><line x1="0" y1="5" x2="26" y2="5" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/><rect x="9.500" y="1.500" width="7" height="7" fill="#000" stroke="currentColor" stroke-width="2" transform="rotate(45 13 5)"/></svg>GATS</span>
+      <span><svg width="26" height="10" aria-hidden="true"><line x1="0" y1="5" x2="26" y2="5" stroke="currentColor" stroke-width="2" stroke-dasharray="2 4"/><rect x="9.500" y="1.500" width="7" height="7" fill="currentColor"/></svg>Росстат</span>
+      <span><svg width="14" height="10" aria-hidden="true"><path d="M7 1l6 8H1z" fill="currentColor"/></svg>LRC/MONICA</span>
+    </div>
+    <div id="chart" class="chart"></div>
+    <details class="table-view">
+      <summary>Показать таблицей</summary>
+      <div class="table-scroll"><table id="chart-table"><thead><tr><th>Год</th><th>Источник</th><th>Мужчины, %</th><th>Женщины, %</th></tr></thead><tbody></tbody></table></div>
+    </details>
+    <p class="src"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2598552" target="_blank" rel="noopener">RLMS 1992–2003: Perlman, 2007</a> · <a href="https://doi.org/10.1186/s12889-020-08464-4" target="_blank" rel="noopener">RLMS 2004–2016 и LRC/MONICA: Shkolnikov, 2020</a> · <a href="https://stacks.cdc.gov/view/cdc/148709/cdc_148709_DS1.pdf" target="_blank" rel="noopener">GATS</a> · <a href="https://t-j.ru/nosmoking-stat/" target="_blank" rel="noopener">Росстат, по Т—Ж</a></p>
+
+    <h3 class="rv">Сколько курят сейчас? Смотря кого спросить</h3>
+    <div class="trio rv">
+      <div class="stat"><b class="num">18,6%</b><span>Росстат, выборочное наблюдение здоровья, 2024. Эту цифру приводит Минздрав.</span></div>
+      <div class="stat"><b class="num">25,5%</b><span>Росстат, обследование условий жизни, 2024. Другой опрос того же ведомства.</span></div>
+      <div class="stat"><b class="num">31%</b><span>ВЦИОМ, 2024: сигареты, стики или вейпы.</span></div>
+    </div>
+    <p class="src rv"><a href="https://www.vedomosti.ru/society/articles/2025/05/31/1113301-kolumb-ne-vinovat" target="_blank" rel="noopener">Ведомости, 31.05.2025</a> · <a href="https://t-j.ru/nosmoking-stat/" target="_blank" rel="noopener">Т—Ж, 10.07.2025</a>. Цель Минздрава: <a href="https://expert.ru/news/minzdrav-nameren-snizit-dolyu-kurilshchikov-v-rf-k-2030-godu-do-16" target="_blank" rel="noopener">16% к 2030 году</a>.</p>
+
+    <h3 class="rv">Тогда и сейчас</h3>
+    <div class="table-scroll rv">
+      <table class="compare">
+        <thead><tr><th>Показатель</th><th>Тогда</th><th>Сейчас</th></tr></thead>
+        <tbody>
+          <tr><th>Мужчины</th><td>≈60% (1970–2000-е)</td><td>32,3% (2024)</td></tr>
+          <tr><th>Женщины</th><td>18,4% (1985)</td><td>7,7% (2024)</td></tr>
+          <tr><th>Подростки 13–15 лет, табак</th><td>27,3% (2004)</td><td>11,0% (2021)</td></tr>
+          <tr><th>Подростки, дым дома</th><td>76,4% (2004)</td><td>23,1% (2021)</td></tr>
+          <tr><th>Подростки, электронные сигареты</th><td>нет данных</td><td>16,7% (2021)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="src rv">Источники и методики разные, сравнение примерное. <a href="https://journals.rcsi.science/0040-3660/article/view/255128" target="_blank" rel="noopener">Salagai и др., Терапевтический архив, 2024</a>. Авторы связаны с Минздравом.</p>
+  </div>
+
+  <div class="col">
+    <figure class="ph ph--color rv" data-speed="0.05">
+      <div class="ph-in"><img src="assets/img/cinema.jpg" width="1024" height="683" loading="lazy" alt="Вечерний летний кинотеатр под открытым небом в парке Горького"></div>
+      <figcaption>Летний кинотеатр в парке Горького, 2018. Фото Andrey Filippov. <a href="https://commons.wikimedia.org/wiki/File:Moscow,_open-air_summer_cinema_in_Gorky_Park_(43860571871).jpg" target="_blank" rel="noopener">CC BY 2.0</a></figcaption>
+    </figure>
+    <h3 class="rv">Новая глава</h3>
+    <p class="rv">В 2020 году вейпы приравняли к табаку в запретах, в 2023-м их запретили продавать несовершеннолетним. В июне 2026 года подписан закон: с 1 марта 2027-го продажа только по лицензии, а регионы смогут запрещать торговлю в порядке эксперимента до 2032 года. Общего запрета в стране на сегодня нет.</p>
+    <figure class="vid rv">
+      <video controls preload="none" playsinline poster="assets/img/vape-poster.jpg" src="assets/video/vape-the-real-cost.webm" aria-label="Социальная реклама FDA о вейпах: девушка лежит на кровати, и её постепенно засыпает вейпами"></video>
+      <figcaption>Социальная реклама FDA (США), 2025: девушку постепенно засыпает вейпами. Подпись в конце: подростки становятся зависимыми быстрее, чем думают. Вейпы вредят здоровью. <a href="https://commons.wikimedia.org/wiki/File:It%E2%80%99s_Easy_to_Lose_Control_to_Vapes_-_The_Real_Cost.webm" target="_blank" rel="noopener">Общественное достояние</a></figcaption>
+    </figure>
+    <p class="src rv"><a href="https://t-j.ru/news/regiony-zapret-veipov/" target="_blank" rel="noopener">Т—Ж, 26.06.2026</a></p>
+  </div>
+</section>
+
+<!-- ========== ФИНАЛ ========== -->
+<section id="final" class="final" data-scene="final" data-at="0.14" data-year="2026">
+  <div class="final-open">
+    <p class="final-word">Вдох</p>
+  </div>
+  <div class="final-body">
+    <h2 class="rv">Что происходит с телом после отказа от курения</h2>
+    <ol class="who">
+      <li class="rv"><b>20 минут</b><span>снижаются частота сердечных сокращений и артериальное давление</span></li>
+      <li class="rv"><b>12 часов</b><span>уровень монооксида углерода в крови снижается до нормы</span></li>
+      <li class="rv"><b>2–12 недель</b><span>улучшается кровообращение и работа лёгких</span></li>
+      <li class="rv"><b>1–9 месяцев</b><span>уменьшаются кашель и одышка</span></li>
+      <li class="rv"><b>1 год</b><span>риск ишемической болезни сердца снижается примерно наполовину</span></li>
+      <li class="rv"><b>5–15 лет</b><span>риск инсульта становится таким же, как у некурящего человека</span></li>
+      <li class="rv"><b>10 лет</b><span>вдвое снижается риск рака лёгких, снижается риск рака полости рта, горла, пищевода, мочевого пузыря, шейки матки и поджелудочной железы</span></li>
+      <li class="rv"><b>15 лет</b><span>риск ишемической болезни сердца сравнивается с риском у некурящего</span></li>
+    </ol>
+    <p class="src rv"><a href="https://www.who.int/ru/news-room/questions-and-answers/item/tobacco-health-benefits-of-smoking-cessation" target="_blank" rel="noopener">Всемирная организация здравоохранения, 25.02.2020</a></p>
+    <div class="help rv">
+      <p>Помощь при отказе от курения</p>
+      <b>8-800-200-0-200</b>
+      <span>Единая служба Минздрава. Звонок бесплатный, затем наберите 1.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ИСТОЧНИКИ ========== -->
+<footer id="credits" class="credits" data-scene="credits" data-at="0.2">
+  <div class="credits-in">
+    <h2>Источники и права</h2>
+    <p>Лонгрид подготовлен как учебная работа. Это хроника событий, а не реклама или пропаганда курения. Все цифры взяты из указанных источников. Портреты Николая Петровича, Виктора, Лены и Даши придуманы и помечены как собирательные образы.</p>
+
+    <h3>Как мы соблюдали закон</h3>
+    <ul>
+      <li><b>Реклама.</b> Табачная реклама запрещена (<a href="https://www.consultant.ru/document/cons_doc_LAW_58968/3bfc26317bd01efad6f67aadf9981b248a57ef4b/" target="_blank" rel="noopener">п. 8 ст. 7 № 38-ФЗ</a>). Этот материал справочно-информационный и не продвигает товар (<a href="https://www.consultant.ru/document/cons_doc_LAW_58968/c530355c76ec66b91be9125e07b0b2bafd370a08/" target="_blank" rel="noopener">п. 3 ч. 2 ст. 2 № 38-ФЗ</a>). Партнёрских ссылок нет, советов, что курить, нет.</li>
+      <li><b>Вред.</b> Предупреждение о вреде есть в начале, на каждом экране внизу и рядом с архивными изображениями. Закон прямо предусматривает просвещение о вреде табака (<a href="https://www.consultant.ru/document/cons_doc_LAW_142515/1991a1ab71085fb0a4ada4b3ee44544973484d17/" target="_blank" rel="noopener">ст. 15 № 15-ФЗ</a>).</li>
+      <li><b>Возраст.</b> Сайт не зарегистрирован как СМИ, поэтому знак добровольный (<a href="https://www.consultant.ru/document/cons_doc_LAW_108808/b663a547cc140a293671b9fc316f76f70c99e59f/" target="_blank" rel="noopener">ч. 2 ст. 14 № 436-ФЗ</a>). Мы поставили 18+.</li>
+      <li><b>Изображения.</b> Только открытые лицензии Creative Commons (<a href="https://www.consultant.ru/document/cons_doc_LAW_64629/e0c0d28fc67b7998751c3a7f98f6be9dfb789911/" target="_blank" rel="noopener">ст. 1286.1 ГК РФ</a>) и общественное достояние (<a href="https://www.consultant.ru/document/cons_doc_LAW_64629/366db9d9c7215d66ada95405f1654967f2ae5e4b/" target="_blank" rel="noopener">ст. 1282 ГК РФ</a>). Под каждым снимком стоят автор, лицензия и ссылка на источник (<a href="https://www.consultant.ru/document/cons_doc_LAW_64629/01cf40c9e42efacdb8dff7cdd410e2542bbbfdf4/" target="_blank" rel="noopener">ст. 1265 ГК РФ</a>).</li>
+      <li><b>Газеты.</b> Короткие отрывки с указанием издания и автора, как обзор печати (<a href="https://www.consultant.ru/document/cons_doc_LAW_64629/84bbd636598a59112a4fe972432343dd4f51da1d/" target="_blank" rel="noopener">ст. 1274 ГК РФ</a>). Законы и документы ВОЗ авторским правом не охраняются (<a href="https://www.consultant.ru/document/cons_doc_LAW_64629/be05678dc42ddc67aae5be9ba9beebd367fb9a3f/" target="_blank" rel="noopener">п. 6 ст. 1259 ГК РФ</a>).</li>
+      <li><b>Кино.</b> Только ссылки на страницы фильмов, кадров нет.</li>
+    </ul>
+    <p class="small">Это наше прочтение законов в учебной работе, а не юридическое заключение.</p>
+
+    <!--CREDITS-START-->
+    <h3>Иллюстрации и видео</h3>
+    <p class="small">Все снимки размещены копиями на этом сайте. Изменения: кадрирование; часть фото переведена в чёрно-белый вид средствами страницы; на снимке киоска размыты марки. Обработанные копии снимков под лицензиями CC BY-SA распространяются на тех же условиях. Рисунок на фоне создан для этого сайта. Шрифты Yeseva One, Golos Text, Caveat, Old Standard TT: лицензия SIL Open Font License.</p>
+    <ul class="credit-list">
+        <li>Плакат «Папиросы Трезвон. Нет лучше», 1925. Автор: А. Н. Зеленский. Лицензия: общественное достояние. <a href="https://commons.wikimedia.org/wiki/File:%D0%97%D0%B5%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%9F%D0%B0%D0%BF%D0%B8%D1%80%D0%BE%D1%81%D1%8B_%D0%A2%D1%80%D0%B5%D0%B7%D0%B2%D0%BE%D0%BD._%D0%9D%D0%B5%D1%82_%D0%BB%D1%83%D1%87%D1%88%D0%B5.jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Плакат «Все курят папиросы Бокс. Моссельпром», 1928. Автор: А. Н. Зеленский. Лицензия: общественное достояние. <a href="https://commons.wikimedia.org/wiki/File:%D0%92%D1%81%D0%B5_%D0%BA%D1%83%D1%80%D1%8F%D1%82_%D0%BF%D0%B0%D0%BF%D0%B8%D1%80%D0%BE%D1%81%D1%8B_%D0%91%D0%BE%D0%BA%D1%81._%D0%9C%D0%BE%D1%81%D1%81%D0%B5%D0%BB%D1%8C%D0%BF%D1%80%D0%BE%D0%BC.jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Плакат папирос «Сафо», 1929. Автор: А. Н. Зеленский. Лицензия: общественное достояние. <a href="https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BF%D0%B8%D1%80%D0%BE%D1%81%D1%8B_%D0%A1%D0%B0%D1%84%D0%BE.jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Александр Родченко с папиросой, 1930. Автор: Е. М. Лангман. Лицензия: общественное достояние. <a href="https://commons.wikimedia.org/wiki/File:1930._%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%A0%D0%BE%D0%B4%D1%87%D0%B5%D0%BD%D0%BA%D0%BE_%D1%81_%D0%BF%D0%B0%D0%BF%D0%B8%D1%80%D0%BE%D1%81%D0%BE%D0%B9.jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>«Закурил. Сельхозработник закуривает», 1924. Автор: Н. П. Андреев. Лицензия: общественное достояние. <a href="https://commons.wikimedia.org/wiki/File:Lit_a_Cigarette._Farm_Labourer.jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Командование Центрального фронта перед Курской битвой, 1943. Автор: автор неизвестен, архив Минобороны России. Лицензия: <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener">CC BY 4.0</a>. <a href="https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D1%84%D1%80%D0%BE%D0%BD%D1%82%D0%B0_%D0%BF%D0%B5%D1%80%D0%B5%D0%B4_%D0%9A%D1%83%D1%80%D1%81%D0%BA%D0%BE%D0%B9_%D0%B1%D0%B8%D1%82%D0%B2%D0%BE%D0%B9.jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Шахматисты на одном из бульваров, 1960-е. Автор: В. В. Ахломов, Главархив Москвы. Лицензия: <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener">CC BY 4.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Chess_game_of_Moscow_Boulevard.jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Кабинет начальника строительства ББК, музей в Медвежьегорске, 2013. Автор: Visem. Лицензия: <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">CC BY-SA 3.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Medvezhyegorsk_museum_20.JPG" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Новый Арбат, у кафе «Метелица», 1975. Автор: Fortepan, ID 89330, дар Urbán Tamás. Лицензия: <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">CC BY-SA 3.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Ice_cream_Fortepan_89330.jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Калининский проспект, 1975. Автор: Fortepan, ID 89332, дар Urbán Tamás. Лицензия: <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">CC BY-SA 3.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Novij_Arbat_(ekkor_Kalinyin)_sug%C3%A1r%C3%BAt._Fortepan_89332.jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Юбилейная пачка «Союз — Аполлон», 1975. Автор: San Diego Air &amp; Space Museum Archives. Лицензия: общественное достояние. <a href="https://commons.wikimedia.org/wiki/File:121825win010_Curatorial_Collection_Image_(55181953054).jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Очередь в табачный киоск, август 1990. Автор: В. Потулов, Главархив Москвы. Лицензия: <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener">CC BY 4.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Tobacco_kiocks_in_Moscow_August_1990.jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Очередь в районе метро «Новослободская», август 1990. Автор: С. Тетерин, Главархив Москвы. Лицензия: <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener">CC BY 4.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Square_on_Novoslobodskaya_August_1990.jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Большая Никольская, 1995. Автор: Joe McGowan. Лицензия: <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener">CC BY 2.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Moscow2_1995.jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Улица Большая Ордынка, июнь 1992. Автор: С. Поминов, Главархив Москвы. Лицензия: <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener">CC BY 4.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Bolshaya_Ordynka_1992.jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Табачный киоск, Волгоград, 2009. Автор: michael clarke stuff. Лицензия: <a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="noopener">CC BY-SA 2.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Volgograd_Tabac_2009.jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Сигареты в белых контейнерах, супермаркет в Москве, 2020. Автор: Stolbovsky. Лицензия: <a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">CC BY-SA 3.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Cigarettes_in_Moscow_supermarket_01.jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Курилка за Никольским Посадом, 2016. Автор: А. В. Щекинов. Лицензия: <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>. <a href="https://commons.wikimedia.org/wiki/File:%D0%9A%D1%83%D1%80%D0%B8%D0%BB%D0%BA%D0%B0_%D0%B7%D0%B0_%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%BC_%D0%9F%D0%BE%D1%81%D0%B0%D0%B4%D0%BE%D0%BC.jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Московский марафон, 2013. Автор: Mika Stetsovski. Лицензия: <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener">CC BY 2.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Moscow_Marathon_2013_(13658932184).jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Летний кинотеатр в парке Горького, 2018. Автор: Andrey Filippov. Лицензия: <a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener">CC BY 2.0</a>. <a href="https://commons.wikimedia.org/wiki/File:Moscow,_open-air_summer_cinema_in_Gorky_Park_(43860571871).jpg" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Ролик «Celebrities Against Smoking: Christy Turlington». Автор: Centers for Disease Control and Prevention. Лицензия: общественное достояние. <a href="https://commons.wikimedia.org/wiki/File:Celebrities_Against_Smoking_Christy_Turlington_PSA.webm" target="_blank" rel="noopener">Страница файла</a>.</li>
+        <li>Ролик «It’s Easy to Lose Control to Vapes», кампания The Real Cost, 2025. Автор: U.S. Food &amp; Drug Administration. Лицензия: общественное достояние. <a href="https://commons.wikimedia.org/wiki/File:It%E2%80%99s_Easy_to_Lose_Control_to_Vapes_-_The_Real_Cost.webm" target="_blank" rel="noopener">Страница файла</a>.</li>
+    </ul>
+    <h3>Что страдает от курения</h3>
+    <p class="small">Подписи к органам на рисунке опираются на доклад <a href="https://www.ncbi.nlm.nih.gov/books/NBK179276/" target="_blank" rel="noopener">The Health Consequences of Smoking: 50 Years of Progress</a> (U.S. Surgeon General, 2014).</p>
+    <!--CREDITS-END-->
+
+    <h3>Что мы не смогли подтвердить</h3>
+    <ul class="small">
+      <li>Точный год надписи Минздрава СССР на пачках: источники называют около 1978 и около 1985 годов.</li>
+      <li>Сколько табачных фабрик остановилось в 1990 году: версии расходятся. Норма в Москве тоже: 5 пачек в месяц у TIME, полпачки в день у New York Times.</li>
+      <li>Сквозной ряд производства сигарет за 1960–1990 годы и данные за 2025 год.</li>
+      <li>Цифры Росстата взяты из пересказа в СМИ, таблицы ведомства напрямую открыть не удалось.</li>
+      <li>Диапазон советских оценок для женщин в 1960–70-х (26,3–49,1%, по Старкс) резко расходится с поздними опросами, поэтому на графике его нет.</li>
+    </ul>
+
+    <p class="fin">Курение вредит вашему здоровью.</p>
+  </div>
+</footer>
+
+</main>
+
+<script src="assets/js/sketch.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
